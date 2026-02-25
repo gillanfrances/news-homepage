@@ -12,7 +12,7 @@ body {
 }
 
 a {
-         text-decoration: none;
+        text-decoration: none;
 }
 
 /* HEADER */
@@ -21,7 +21,7 @@ header {
         width: 80%;
         display: flex;
         flex-direction: row;
-        padding: 4rem;
+        padding: 2rem;
         margin: 0 auto;
 }
 
@@ -86,11 +86,17 @@ main {
 
 .banner-title {
         grid-column: span 1;
+        padding: 2rem;
 }
 
 .banner-text {
         grid-column: span 1;
-        padding: 1rem;
+        padding: 2rem;
+        color: hsl(236, 13%, 42%);
+}
+
+.banner-text p {
+        line-height: 1.5rem;
 }
 
 .readmore {
@@ -117,7 +123,7 @@ main {
 
 h2 {
         color: hsl(240, 100%, 5%);
-        font-size: 3rem;
+        font-size: 4rem;
 }
 
 /* SIDEBAR */
@@ -201,6 +207,7 @@ h6 a:hover {
 .attribution {
         font-size: 11px;
         text-align: center;
+        padding: 1rem 0 1rem 0;
 }
 
 .attribution a {

@@ -1,3 +1,203 @@
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        min-height: 100vh;
+        font-size: 15px;
+}
+
+a {
+         text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        padding: 4rem;
+        margin: 0 auto;
+}
+
+nav {
+        justify-content: right;
+        width: 80%;
+        flex-direction: row;
+        text-align: end;
+}
+
+nav ul {
+        list-style-type: none;
+}
+
+nav li {
+        display: inline-block;
+        padding: 1rem;
+}
+
+nav li a {
+        color: hsl(236, 13%, 42%);
+}
+
+nav li a:hover {
+        color: hsl(5, 85%, 63%);
+}
+
+.logo {
+        width: 20%;
+}
+
+/* MAIN */
+
+main {
+        display: grid;
+        min-height: 100vh;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0 auto;
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2rem;
+}
+
+.banner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column: span 2;
+        grid-row: span 2;
+}
+
+.banner-image {
+        background-image: url('assets/images/image-web-3-desktop.jpg');
+        width: 100%;
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+        grid-column: span 2;
+}
+
+.banner-title {
+        grid-column: span 1;
+}
+
+.banner-text {
+        grid-column: span 1;
+        padding: 1rem;
+}
+
+.readmore {
+        display: inline-block;
+        padding: 1rem;
+        background-color: hsl(5, 85%, 63%);
+        color: hsl(240, 100%, 5%);
+        text-transform: uppercase;
+        margin-top: 1rem;
+        letter-spacing: 5px;
+        font-weight: 700;
+}
+
+.readmore:hover {
+        display: inline-block;
+        padding: 1rem;
+        background-color: hsl(240, 100%, 5%);
+        color: hsl(36, 100%, 99%);
+        text-transform: uppercase;
+        margin-top: 1rem;
+        letter-spacing: 5px;
+        font-weight: 700;
+}
+
+h2 {
+        color: hsl(240, 100%, 5%);
+        font-size: 3rem;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+        grid-row: span 2;
+        background-color: hsl(240, 100%, 5%);
+        padding: 2rem;
+}
+
+.sidebar-item {
+        padding: 2rem 0 2rem 0;
+}
+
+.sidebar-item p {
+        color: hsl(236, 13%, 42%);
+}
+
+h3 {
+        color: hsl(35, 77%, 62%);
+        font-size: 2rem;
+}
+
+h4, h4 a {
+        color: hsl(36, 100%, 99%);
+        font-size: 1.45rem;
+}
+
+h4 a:hover{
+        color: hsl(35, 77%, 62%);
+}
+
+hr {
+        border: none;
+        border-top: 0.5px solid hsl(36, 100%, 99%);
+        width: 100%;
+        margin: 1rem auto;
+}
+
+/* TRENDING */
+
+.trending {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+}
+
+.trending-item {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+}
+
+.trending-item img {
+        width: 40%;
+        height: fit-content;
+}
+
+.trending-item-text {
+        flex-direction: column;
+}
+
+h5 {
+        color: hsl(5, 85%, 63%);
+        font-size: 1.6rem;
+}
+
+h6, h6 a {
+        color: hsl(240, 100%, 5%);
+        font-size: 1rem;
+}
+
+h6 a:hover {
+        color: hsl(5, 85%, 63%);
+}
+
+/* FOOTER */
+
 .attribution {
         font-size: 11px;
         text-align: center;

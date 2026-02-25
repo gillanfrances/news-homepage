@@ -7,7 +7,6 @@ $(document).ready(function() {
         $nav.toggleClass('active');
         $overlay.fadeToggle(300); 
         
-        // Lock/Unlock body scroll
         if ($nav.hasClass('active')) {
             $body.css('overflow', 'hidden');
         } else {
